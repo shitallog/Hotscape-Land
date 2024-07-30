@@ -1,0 +1,64 @@
+
+<!-- SHOP DETAILS AREA START -->
+<div class="ltn__shop-details-area pb-10">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="ltn__shop-details-inner ltn__page-details-inner mb-60">
+                    <div class="ltn__blog-meta">
+                        <ul>
+                            <li class="ltn__blog-category">
+                                <a href="#">Featured</a>
+                            </li>
+                            <li class="ltn__blog-category">
+                                <a class="bg-orange" href="#">For Rent</a>
+                            </li>
+                            <li class="ltn__blog-date">
+                                <i class="far fa-calendar-alt"></i><?php echo date('F j, Y'); ?>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <h1><?php echo htmlspecialchars($row['title']); ?></h1>
+                    <label><span class="ltn__secondary-color"><i class="flaticon-pin"></i></span> <?php echo htmlspecialchars($row['Location']); ?></label>
+                    <h4 class="title-2">Description</h4>
+                    <p><?php echo htmlspecialchars($row['PostDetails']); ?></p>
+                    
+                    <h4 class="title-2">Property Detail</h4>  
+                    <div class="property-detail-info-list section-bg-1 clearfix mb-60">                          
+                        <ul>
+                            <li><label>Property ID:</label> <span><?php echo htmlspecialchars($row['postid']); ?></span></li>
+                            <li><label>Home Area: </label> <span><?php echo htmlspecialchars($row['Area']); ?></span></li>
+                            <li><label>Rooms:</label> <span><?php echo htmlspecialchars($row['KeyHighlight']); ?></span></li>
+                            <li><label>Baths:</label> <span><?php echo htmlspecialchars($row['Suitability']); ?></span></li>
+                            <li><label>Year built:</label> <span><?php echo htmlspecialchars($row['transaction']); ?></span></li>
+                        </ul>
+                        <ul>
+                            <li><label>Lot Area:</label> <span><?php echo htmlspecialchars($row['zone']); ?></span></li>
+                            <li><label>Lot dimensions:</label> <span><?php echo htmlspecialchars($row['authority']); ?></span></li>
+                            <li><label>Beds:</label> <span><?php echo htmlspecialchars($row['approach_road']); ?></span></li>
+                            <li><label>Price:</label> <span><?php echo htmlspecialchars($row['PostUrl']); ?></span></li>
+                            <li><label>Property Status:</label> <span>For Sale</span></li>
+                        </ul>
+                    </div>
+                                    
+                    <h4 class="title-2">Facts and Features</h4>
+                    <div class="property-detail-feature-list clearfix mb-45">                            
+                        <ul>
+                            <li>
+                                <div class="property-detail-feature-list-item">
+                                    <i class="flaticon-double-bed"></i>
+                                    <div>
+                                        <h6>Living Room</h6>
+                                        <small>20 x 16 sq feet</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Repeat similar blocks for other features -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
